@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#question-container,
+#quiz-results {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+
+#question {
+    font-size: 25px;
+    margin:0;
+}
+
+#possibleAnswers {
+    margin-top: 5px;
+}
+
+#input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 2em;
+    width: 50%;
+}
+
+#submit {
+    background: #4286f4;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
