@@ -25,24 +25,3 @@ function logArrayWithInterval(array) {
 }
 
 logArrayWithInterval(arr);
-
-//2) function getLogger (index) {
-//return function() {
-//  console.log(arr[index]);
-//};
-//}
-
-//for(var i = 0; i < arr.length; i++){
-//  setTimeout (getLogger(i), 1000 * i);
-//}
-
-//3) var counter = 0;
-// var intervalId;
-// intervalId = setInterval(function(){
-//   if(counter >= arr.length) {
-//     clearInterval(intervalId);
-//     return;
-//   }
-//
-//   console.log(arr[counter++]);
-// }, 1000);
