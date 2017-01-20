@@ -7,8 +7,8 @@ var userFirstName = document.getElementById("firstName");
 var userLastName = document.getElementById("lastName");
 var userFullName = document.getElementById("fullName");
 
-document.getElementById("firstName").addEventListener("keyup", myFunction);
-document.getElementById("lastName").addEventListener("keyup", myFunction);
+userFirstName.addEventListener("keyup", myFunction);
+userLastName.addEventListener("keyup", myFunction);
 
 function myFunction() {
     userFullName.innerText = "Hello, " + userFirstName.value + " " + userLastName.value + "!";
