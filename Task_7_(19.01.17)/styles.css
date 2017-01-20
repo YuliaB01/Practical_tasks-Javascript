@@ -1,0 +1,27 @@
+body {
+    font-size: 25px;
+    margin: 25px;
+}
+
+#firstName,
+#lastName {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+/*#btn {
+    height: 28px;
+    border-radius: 5px;
+    background-color: #06a34d;
+    font-size: 15px;
+    color: white;
+}*/
+
+#fullName {
+    font-size: 35px;
+    color: #340251;
+}
