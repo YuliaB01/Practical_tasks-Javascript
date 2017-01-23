@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" name="demo">
+            <div class="label-container">
+                <label for="firstName">
+                    First name:
+                    <span class="red-star"> *</span>
+                    <input type="text" id="firstName" name="firstName" tabindex="1" placeholder="Enter your first name" title="Name must be 4-10 symbols long!"required>
+                </label>
+            </div>
+            <div class="label-container">
+                <label for="lastName">
+                    Last name:
+                    <span class="red-star"> *</span>
+                    <input type="text" id="lastName" name="lastName" tabindex="2" placeholder="Enter your last name" title="Last name must be 4-10 symbols long!" required>
+                </label>
+            </div>
+            <div class="label-container">
+                <label for="phoneNumber">
+                    Phone number:
+                    <span class="red-star"> *</span>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" tabindex="3" placeholder="XXX XXX-XX-XX" title="Number must be 10 symbols long!"equired>
+                </label>
+            </div>
+            <div class="label-container">
+                <label for="email">
+                    Email address:
+                    <span class="red-star"> *</span>
+                    <input type="email" id="email" name="email" tabindex="4" placeholder="example@mail.com" required>
+                </label>
+            </div>
+            <div class="label-container">
+                <label for="select">
+                    Chose your specification:
+                    <span class="red-star"> *</span>
+                    <select name="select" id="select" tabindex="5">
+                        <option id="designer" value="designer">Designer</option>
+                        <option id="QA" value="QA">QA Engineer</option>
+                        <option id="developer" value="developer">Developer</option>
+                    </select>
+                </label>
+            </div>
+            <div class="label-container">
+                <label for="lang" id="language">
+                    Programming language:
+                    <span class="red-star"> *</span>
+                    <input type="text" id="lang" name="lang" tabindex="0" placeholder="Ex.: C#, Java, PHP">
+                </label>
+            </div>
+            <div class="button-container">
+                <button type="button" id="submitButton">Submit</button>
+                <p class="validation-message"></p>
+            </div>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
