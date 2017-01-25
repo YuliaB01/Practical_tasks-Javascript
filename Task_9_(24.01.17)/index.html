@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="form-container">
+    <div class="user-validation-form">User login form</div>
+    <form action="/" method="GET" name="loginForm" class="login-form">
+        <label for="login">
+            Login:
+            <span class="red-star"> *</span>
+            <input type="text" id="login" name="login" placeholder="Enter login" tabindex="1" required>
+            <p id="loginErrorMessage" class="errorMessage"></p>
+        </label>
+        <label for="password">
+            Password:
+            <span class="red-star"> *</span>
+            <input type="password" id="password" name="password" placeholder="Enter password" tabindex="0" required>
+            <p id="passwordErrorMessage" class="errorMessage"></p>
+        </label>
+        <button type="submit">Log in</button>
+    </form>
+    <a href="#" id="createAccountLink">Create account</a>
+</div>
+<div id="form-container2">
+    <div class="user-validation-form">User registration form</div>
+    <form action="/" method="GET" class="login-form" name="registerForm">
+        <label for="email">
+            Email:
+            <span class="red-star"> *</span>
+            <input type="text" id="email" name="email" placeholder="Enter email" tabindex="1" required>
+            <p id="emailErrorMessage" class="errorMessage"></p>
+        </label>
+        <label for="login2">
+            Login:
+            <span class="red-star"> *</span>
+            <input type="text" id="login2" name="login2" placeholder="Enter login" tabindex="2" required>
+            <p id="login2ErrorMessage" class="errorMessage"></p>
+        </label>
+        <label for="password2">
+            Password:
+            <span class="red-star"> *</span>
+            <input type="password" id="password2" name="password2" placeholder="Enter password" tabindex="3" required>
+            <p id="password2ErrorMessage" class="errorMessage"></p>
+        </label>
+        <label for="confirm-password">
+            Confirm your password:
+            <span class="red-star"> *</span>
+            <input type="password" id="confirm-password" name="confirmPassword" placeholder="Enter your password again" tabindex="0" required>
+            <p id="confirmErrorMessage" class="errorMessage"></p>
+        </label>
+        <button type="submit" class="register-btn">Create account</button>
+    </form>
+    <a href="#" id="loginLink">Log in</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

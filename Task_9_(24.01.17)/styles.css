@@ -1,0 +1,88 @@
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#form-container {
+    width: 400px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    margin: 45px auto 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 11px 1px #ccc;
+    position: relative;
+}
+
+#form-container2 {
+    width: 400px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    margin: 45px auto 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 11px 1px #ccc;
+    display: none;
+    position: relative;
+}
+
+.user-validation-form {
+    font-size: 20px;
+    background: #fbfce5;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 0 10px;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+label,
+input {
+    display: block;
+
+}
+
+label {
+    margin-bottom: 15px;
+}
+
+.red-star {
+    color: red;
+}
+
+input {
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 30px;
+}
+
+.errorMessage {
+    margin: 0;
+    height: 15px;
+    color: red;
+}
+
+button {
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #4c91cd;
+    background: linear-gradient(to top, rgb(66, 139, 202), rgb(96, 157, 210));
+    color: white;
+    margin-right: 15px;
+}
+
+#createAccountLink {
+    position: absolute;
+    left: 100px;
+    top: 230px;
+}
+
+#loginLink {
+    position: absolute;
+    left: 175px;
+    top: 395px;
+}
