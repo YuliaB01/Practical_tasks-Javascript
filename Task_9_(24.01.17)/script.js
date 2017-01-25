@@ -58,7 +58,6 @@ function passwordConfirmation(e) {
 }
 
 
-
 login.addEventListener("input", function(e) {
     isLoginValid(e, login, "loginErrorMessage");
 });
@@ -108,13 +107,6 @@ form1.addEventListener("submit", function(e) {
     } else {
         return true;
     }
-
-    // if(!password.value) {
-    //     e.preventDefault();
-    //     return false;
-    // } else {
-    //     return true;
-    // }
 });
 
 form2.addEventListener("submit", function(e) {
@@ -124,26 +116,6 @@ form2.addEventListener("submit", function(e) {
         e.preventDefault();
         return false;
     }
-    // if(!login2.value) {
-    //     e.preventDefault();
-    //     return false;
-    // } else {
-    //     return true;
-    // }
-    //
-    // if(!password2.value) {
-    //     e.preventDefault();
-    //     return false;
-    // } else {
-    //     return true;
-    // }
-    //
-    // if(!confirmPassword.value) {
-    //     e.preventDefault();
-    //     return false;
-    // } else {
-    //     return true;
-    // }
 });
 
 

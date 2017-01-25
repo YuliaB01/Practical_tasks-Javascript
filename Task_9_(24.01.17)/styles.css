@@ -34,7 +34,8 @@ body {
     padding: 10px 0 10px;
 }
 
-.login-form {
+.login-form,
+.register-form {
     padding: 20px;
 }
 
