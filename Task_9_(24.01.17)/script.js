@@ -57,23 +57,6 @@ function passwordConfirmation(e) {
     }
 }
 
-form2.addEventListener("submit", function(e) {
-    if(!isEmailValid) {
-        e.preventDefault();
-    }
-
-    if(!isLoginValid(e, login2, "login2ErrorMessage")) {
-        e.preventDefault();
-    }
-
-    if(!isPasswordValid(e, password2, "password2ErrorMessage")) {
-        e.preventDefault();
-    }
-
-    if(!passwordConfirmation) {
-        e.preventDefault();
-    }
-});
 
 
 login.addEventListener("input", function(e) {
@@ -119,13 +102,48 @@ function isComplexPassword(password) {
 }
 
 form1.addEventListener("submit", function(e) {
-    if(!isLoginValid(e, login, "loginErrorMessage")) {
+    if(!login.value || !password.value) {
         e.preventDefault();
+        return false;
+    } else {
+        return true;
     }
 
-    if(isPasswordValid(e, password, "passwordErrorMessage")) {
+    // if(!password.value) {
+    //     e.preventDefault();
+    //     return false;
+    // } else {
+    //     return true;
+    // }
+});
+
+form2.addEventListener("submit", function(e) {
+    if(email.value || login2.value || password2.value || confirmPassword.value) {
+        return true;
+    } else {
         e.preventDefault();
+        return false;
     }
+    // if(!login2.value) {
+    //     e.preventDefault();
+    //     return false;
+    // } else {
+    //     return true;
+    // }
+    //
+    // if(!password2.value) {
+    //     e.preventDefault();
+    //     return false;
+    // } else {
+    //     return true;
+    // }
+    //
+    // if(!confirmPassword.value) {
+    //     e.preventDefault();
+    //     return false;
+    // } else {
+    //     return true;
+    // }
 });
 
 
