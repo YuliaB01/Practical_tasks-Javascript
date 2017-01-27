@@ -11,14 +11,14 @@ button.addEventListener("click", function(e) {
     fullNameLabel.innerText = "Full name:";
     var fullName = document.createElement("input");
     fullName.type = "text";
-    fullName.id = "fName";
+    fullName.name = "Input";
     fullNameLabel.appendChild(fullName);
 
     var addressLabel = document.createElement("label");
     addressLabel.innerText = "Address:";
     var address = document.createElement("input");
     address.type = "text";
-    address.id = "Address";
+    address.name = "Address";
     addressLabel.appendChild(address);
 
     var checkboxLabel = document.createElement("label");
@@ -55,14 +55,10 @@ button.addEventListener("click", function(e) {
 });
 
 form.addEventListener("submit", function(e) {
-    var addressInput = document.getElementById("Address");
-    var fullNameInput = document.getElementById("fName");
-
-    if(addressInput.value.trim() == "" || fullNameInput.value.trim() == "") {
-        e.preventDefault();
-        return false;
-    } else {
-        return true;
+    for(var i = 0; i < form.elements.length; i++) {
+        if(form.elements[i].name && !form.elements[i].value) {
+            e.preventDefault();
+            break;
+        }
     }
-
 });
