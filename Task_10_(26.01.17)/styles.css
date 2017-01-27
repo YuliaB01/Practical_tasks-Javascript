@@ -1,0 +1,38 @@
+label {
+    margin-right: 25px;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    height: 20px;
+    margin-left: 10px;
+}
+
+button {
+    font-size: 12px;
+    width: 70px;
+    border-radius: 5px;
+    border: 1px solid #4c91cd;
+    background: linear-gradient(to top, rgb(66, 139, 202), rgb(96, 157, 210));
+    color: white;
+}
+
+#AddButton {
+    margin-bottom: 20px;
+    background: linear-gradient(to top, rgb(43, 130, 26), rgb(58, 178, 33));
+    border: 1px solid #067006;
+}
+
+#removeBtn {
+    background: linear-gradient(to top, rgb(193, 30, 5), rgb(224, 33, 4));
+    border:1px solid #c41d03;
+}
+
+#submitBtn {
+    margin-top: 20px;
+}
+
+#formDiv {
+    padding: 10px 0px;
+}
