@@ -12,6 +12,11 @@ table, th, td {
     border-collapse: collapse;
 }
 
+tr:hover {
+    background: #efebea;
+    transition: background linear .3s;
+}
+
 th {
     font-size: 16px;
     padding: 10px 5px;
@@ -22,6 +27,7 @@ td {
     text-align: center;
     padding: 10px 5px;
 }
+
 table {
     margin-top: 20px;
     width: 100%;
@@ -35,6 +41,11 @@ button {
     border: 1px solid #ad150a;
     background: linear-gradient(to top, rgb(209, 25, 12), rgb(247, 30, 14));
     color: white;
+}
+
+button:hover {
+    background: #af1905;
+    transition: background linear .3s;
 }
 
 i {
