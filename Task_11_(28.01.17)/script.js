@@ -19,7 +19,6 @@ xhr.addEventListener("readystatechange", function() {
 xhr.send();
 
 function renderTableRows(rowsData) {
-
     for (var i in rowsData) {
         table.appendChild(getTableRow(rowsData[i]));
     }
@@ -67,9 +66,7 @@ function getTableRow(rowData) {
 }
 
 table.addEventListener("click", function(e) {
-    var removeBtn = document.getElementsByClassName("removeBtn")[0];
-
-    if(e.target == removeBtn) {
+    if(e.target.tagName == "BUTTON" && e.target.className == "removeBtn") {
         var rowToRemove = e.target.parentElement.parentElement;
         rowToRemove.parentElement.removeChild(rowToRemove);
     }
