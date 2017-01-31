@@ -69,5 +69,8 @@ table.addEventListener("click", function(e) {
     if(e.target.tagName == "BUTTON" && e.target.className == "removeBtn") {
         var rowToRemove = e.target.parentElement.parentElement;
         rowToRemove.parentElement.removeChild(rowToRemove);
+    } else if(e.target.className == "fa fa-trash") {
+        var rowToRemove = e.target.parentElement.parentElement.parentElement;
+        rowToRemove.parentElement.removeChild(rowToRemove);
     }
 });
