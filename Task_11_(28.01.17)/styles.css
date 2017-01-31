@@ -1,0 +1,42 @@
+body {
+    margin: 10px 20px;
+    background-color: #e6f7f4;
+}
+
+.table-container {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 16px;
+    padding: 10px 5px;
+    background-color: #f7f7e3;
+}
+
+td {
+    text-align: center;
+    padding: 10px 5px;
+}
+table {
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+button {
+    font-size: 12px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid #ad150a;
+    background: linear-gradient(to top, rgb(209, 25, 12), rgb(247, 30, 14));
+    color: white;
+}
+
+i {
+    padding-left: 5px;
+}
