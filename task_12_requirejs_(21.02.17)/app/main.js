@@ -1,3 +1,4 @@
-require(["module1", "module2"], function(module1, module2) {
-   console.log(module2);
+require(["ArraySorter", "ArrayToSort"], function(ArraySorter, ArrayToSort) {
+    ArrayToSort.sort(ArraySorter);
+    console.log(ArrayToSort);
 });
