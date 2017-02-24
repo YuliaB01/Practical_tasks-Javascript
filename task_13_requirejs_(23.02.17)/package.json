@@ -1,0 +1,16 @@
+{
+  "name": "task_13_requirejs_(22.02.17)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "requirejs": "^2.3.3"
+  }
+}
