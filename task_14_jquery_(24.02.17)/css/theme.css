@@ -1,0 +1,142 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 60px 45px 30px 45px;
+}
+.users-edit {
+  background: #ffffff;
+  padding: 10px 30px 40px;
+  width: 560px;
+  box-shadow: 0 0 20px rgba(30, 30, 30, 0.5);
+  position: fixed;
+  overflow-y: auto;
+  top: 30px;
+  left: 50%;
+  margin-left: -280px;
+  transition: opacity 0.3s, margin-top 0.5s;
+  border-radius: 10px;
+}
+.users-edit.users-edit-hidden {
+  opacity: 0;
+  margin-top: -600px;
+}
+.users-edit h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.field-row {
+  margin-bottom: 10px;
+}
+.field-row > label {
+  width: 150px;
+  display: inline-block;
+}
+.field-row > input {
+  width: 345px;
+}
+.field-row > textarea {
+  display: block;
+  width: 500px;
+  height: 100px;
+}
+.field-row > input,
+.field-row > textarea {
+  border-radius: 4px;
+  padding: 4px 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.btn {
+  padding: 4px 20px;
+  border: none;
+  transition: background .3s;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.btn.btn-new {
+  background: #9ea;
+  border-radius: 5px;
+  border: 1px solid #6eefac;
+  margin-left: 30px;
+}
+.btn.btn-new:hover {
+  background: #9fb;
+}
+.btn.btn-save {
+  background: #9ae;
+}
+.btn.btn-save:hover {
+  background: #9bf;
+}
+.btn.btn-cancel {
+  background: #ccc;
+}
+.btn.btn-cancel:hover {
+  background: #eee;
+}
+#users-table {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+#users-table tr:nth-child(odd) {
+  background: #dddddb;
+}
+#users-table tr:nth-child(even) {
+  background: #eee;
+}
+#users-table th {
+  text-transform: uppercase;
+  padding: 10px 0;
+  background: #b5b1a1;
+}
+#users-table td {
+  padding: 8px 5px;
+}
+#users-table .options {
+  width: 15%;
+}
+a {
+  text-decoration: none;
+  color: #37c;
+}
+a:hover {
+  text-decoration: underline;
+}
+.removeBtn {
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #992412;
+  background: linear-gradient(to top, #b22b17, #d1331b);
+  color: white;
+  cursor: pointer;
+}
+.removeBtn:hover {
+  background: #992412;
+}
+.editBtn {
+  border-radius: 5px;
+  border: 1px solid #4c91cd;
+  background: linear-gradient(to top, #428bca, #609dd2);
+  color: white;
+  cursor: pointer;
+}
+.editBtn:hover {
+  background: #46a9f4;
+}
+i {
+  margin-left: 5px;
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
